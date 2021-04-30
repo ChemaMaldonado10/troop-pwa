@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './assets/images/logo_troop.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="h-screen w-full bg-indigo-800 flex flex-wrap content-center justify-center">
+      <img className="object-scale-down h-32 w-full" alt="logo" src={logo}/>
+        <div className="bg-gray-800 p-10 rounded-md flex flex-col mt-20">
+          <h1 className="text-white font-mono">LOGIN PAGE</h1>
+          <button className="text-white border-2 mt-4 py-2 px-5 rounded-md bg-indigo-800">Email</button>
+          <button className="text-white border-2 mt-4 py-2 px-5 rounded-md bg-indigo-800">Contraseña</button>
+          <button className="text-white border-2 mt-4 py-2 px-5 rounded-md bg-indigo-800">Inicio</button>
+
+        </div>
+      </div>
     </div>
   );
 }
